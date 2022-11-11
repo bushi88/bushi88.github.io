@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* suppression "margin" et "padding" de Bootstrap */
+
+.row.no-pad {
+  margin: 0;
+  margin: 0;
+}
+.row.no-pad > [class*="col-"] {
+  padding: 0;
+  padding: 0;
+}
+
+/* ************************************************** */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #dbecf8;
+  font-family: tahoma, sans-serif;
+  color: #222;
+  font-size: 16px;
+  padding: 1.5%;
+}
+
+nav img {
+  border-radius: 40%;
+  border: 1px solid #eee;
+  margin-bottom: 0.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ***************** TEXT ************************* */
+
+h1 {
+  display: block;
+  font-size: 2.8em;
+  padding-bottom: 5%;
+  text-shadow: -3px 3px 2px #dbecf8;
+  animation: titre ease 1.5s;
+  padding: 1%;
+}
+
+@keyframes titre {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, -30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+h2 {
+  display: block;
+  background-color: #bbb;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  text-shadow: -1px 2px 1px #cfe9fc;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1.5%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p,
+li {
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #222;
+}
+
+a:hover {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #4169a1;
+  text-decoration: none;
+}
+
+/* ***************** LEFT-CONTAINER ************************* */
+
+.left-container {
+  text-align: center;
+}
+
+.wrap-top {
+  background-color: #bbb;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  text-align: center;
+  height: 34%;
+  padding: 2%;
+  overflow: hidden;
+}
+
+.wrap-bottom {
+  min-height: 66%;
+  /* on utilise uniquement min-height et pas height pour éviter les problèmes de débordement pour les petits écrans */
+}
+
+.contact,
+.hello {
+  background-color: #bbb;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  text-align: justify;
+  margin: 2% 0 2% 0;
+  padding: 8%;
+  overflow: hidden;
+}
+
+.contact {
+  height: 35%;
+}
+
+.hello {
+  height: 63%;
+}
+
+.pict img {
+  border-radius: 30%;
+  border: 3px solid #eee;
+  padding: 2%;
+}
+
+/* ***************** RIGHT-CONTAINER ************************* */
+
+.right-container {
+  text-align: left;
+}
+
+.skillies,
+.professional,
+.training {
+  padding-left: 1%;
+}
+
+.skillies {
+  height: 34%;
+}
+
+.professional {
+  height: 51%;
+}
+
+.right-container .new-pad {
+  padding-left: 2%;
+}
+
+.date {
+  color: #4169a1;
+  font-weight: bold;
+}
+
+.work {
+  font-weight: bold;
+}
+
+.upperc {
+  text-transform: uppercase;
+}
+
+/* ***************** WEB SKILLS ************************* */
+
+.progress {
+  border: 1px solid #222;
+  max-height: 20px;
+  width: 80%;
+}
+
+.progress-bar {
+  background-color: #7e9fcd;
+}
+
+.ww-web {
+  height: 20px;
+}
+
+/* ***************** DOWNLOAD PDF ************************* */
+
+.btn-secondary {
+  background-color: #bbb;
+  color: #222;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: -1px 2px 1px #cfe9fc;
+  margin: 0.5% 0%;
+}
+
+.btn-secondary:hover {
+  background-color: #aab;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* *********************** MEDIA QUERIES ********************** */
+
+@media screen and (max-width: 1050px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) /*WARNING : préférer utiliser des medias queries utilsant min-width: ===> à partir de telle largeur */ {
+  body {
+    font-size: 10px;
+  }
+  .left-container {
+    min-height: 700px;
+  }
+  .wrap-top {
+    height: 300px;
+  }
+  .contact {
+    height: 200px;
+    padding-top: 10px;
+  }
+  .hello {
+    padding-top: 10px;
+    height: 200px;
+  }
+  .right-container {
+    min-height: 1100px;
+  }
+  .skillies {
+    min-height: 550px;
+  }
+  .professional {
+    height: 420px;
+  }
+  .training {
+    height: 120px;
+  }
+  .ww-web {
+    height: 40px;
+  }
+  .col-xs-5 {
+    height: 10px;
+  }
+  .progress {
+    width: 45%;
+  }
+  .hidden {
+    display: block;
+    background-color: #d0edee;
+    text-align: center;
+  }
+  .text-center {
+    background-color: #d0edee;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    font-size: 11px;
+  }
+  .professional {
+    height: 470px;
+  }
+  .training {
+    height: 140px;
+  }
+}
