@@ -10,7 +10,8 @@
   margin: 0;
   margin: 0;
 }
-.row.no-pad > [class*="col-"] {
+
+.row.no-pad>[class*="col-"] {
   padding: 0;
   padding: 0;
 }
@@ -56,6 +57,7 @@ h1 {
     opacity: 0;
     transform: translate(-100px, -30px);
   }
+
   100% {
     opacity: 1;
     transform: translate(0px, 0px);
@@ -83,6 +85,10 @@ li {
   font-size: 0.9em;
 }
 
+li {
+  margin-left: 1em;
+}
+
 a {
   text-decoration: none;
   font-size: 0.9em;
@@ -107,7 +113,7 @@ a:hover {
   border: 2px solid #eee;
   border-radius: 20px;
   text-align: center;
-  height: 34%;
+  min-height: 34%;
   padding: 2%;
   overflow: hidden;
 }
@@ -129,11 +135,11 @@ a:hover {
 }
 
 .contact {
-  height: 35%;
+  min-height: 35%;
 }
 
 .hello {
-  height: 63%;
+  min-height: 63%;
 }
 
 .pict img {
@@ -155,11 +161,11 @@ a:hover {
 }
 
 .skillies {
-  height: 34%;
+  min-height: 34%;
 }
 
 .professional {
-  height: 51%;
+  min-height: 51%;
 }
 
 .right-container .new-pad {
@@ -183,16 +189,10 @@ a:hover {
 
 .progress {
   border: 1px solid #222;
-  max-height: 20px;
-  width: 80%;
 }
 
 .progress-bar {
   background-color: #7e9fcd;
-}
-
-.ww-web {
-  height: 20px;
 }
 
 /* ***************** DOWNLOAD PDF ************************* */
@@ -228,50 +228,58 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767px) /*WARNING : préférer utiliser des medias queries utilsant min-width: ===> à partir de telle largeur */ {
+@media screen and (max-width: 767px)
+
+/*WARNING : préférer utiliser des medias queries utilsant min-width: ===> à partir de telle largeur */
+  {
   body {
     font-size: 10px;
   }
+
   .left-container {
     min-height: 700px;
   }
+
   .wrap-top {
-    height: 300px;
+    min-height: 300px;
   }
+
   .contact {
-    height: 200px;
+    min-height: 200px;
     padding-top: 10px;
   }
+
   .hello {
     padding-top: 10px;
-    height: 200px;
+    min-height: 200px;
   }
+
   .right-container {
     min-height: 1100px;
   }
+
   .skillies {
     min-height: 550px;
   }
+
   .professional {
-    height: 420px;
+    min-height: 420px;
   }
+
   .training {
-    height: 120px;
+    min-height: 120px;
   }
-  .ww-web {
-    height: 40px;
-  }
-  .col-xs-5 {
-    height: 10px;
-  }
+
   .progress {
     width: 45%;
   }
+
   .hidden {
     display: block;
     background-color: #d0edee;
     text-align: center;
   }
+
   .text-center {
     background-color: #d0edee;
   }
@@ -281,10 +289,12 @@ a:hover {
   body {
     font-size: 11px;
   }
+
   .professional {
-    height: 470px;
+    min-height: 470px;
   }
+
   .training {
-    height: 140px;
+    min-height: 140px;
   }
 }
