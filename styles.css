@@ -290,6 +290,10 @@ a:hover {
     font-size: 11px;
   }
 
+  .left-container {
+    min-height: 100vh;
+  }
+
   .professional {
     min-height: 470px;
   }
