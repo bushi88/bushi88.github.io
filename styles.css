@@ -45,7 +45,7 @@ nav img {
 
 h1 {
   display: block;
-  font-size: 2.8em;
+  font-size: 2.6em;
   padding-bottom: 5%;
   text-shadow: -3px 3px 2px #dbecf8;
   animation: titre ease 1.5s;
@@ -226,6 +226,14 @@ a:hover {
   body {
     font-size: 12px;
   }
+
+  .training {
+    min-height: 200px;
+  }
+
+  .title>p {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-width: 767px)
@@ -264,10 +272,6 @@ a:hover {
 
   .professional {
     min-height: 420px;
-  }
-
-  .training {
-    min-height: 120px;
   }
 
   .progress {
